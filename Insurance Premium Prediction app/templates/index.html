@@ -1,0 +1,128 @@
+{% extends 'main.html' %}
+
+{% block body %}
+
+<div class="row" style="margin-bottom: 125px;">
+  <div class="col-md-4"></div>
+  <div class="col-md-5">
+    <center>
+      <h2>
+        <p style=font-size:60px; font-family: 'montserrat' ,sans-serif; font-weight:bold; margin:14px 0px; color:black;>
+          Insurance Premium Prediction</p>
+      </h2>
+    </center>
+    </br>
+
+    <center>
+      <div class="card card-body" style="border: 2px solid black;">
+        <form class="form-horizontal" action='' method="POST" class="col s12">
+          <fieldset>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group my-2">
+
+                  <label for="Age"><b>Age</b></label>
+                  <input class="form-control" name="age" placeholder="Enter Your Age" id="Age" type="number" min="1"
+                    max="150" class="validate">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-md-20">
+                <div class="form-group my-2">
+
+                  <label for="sex">Sex</label>
+                  <select class="form-control" id="sex" name="sex" required>
+                    <option disabled selected value> -- Select an Option -- </option>
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-17">
+                <div class="form-group my-2">
+                  <label for="bmi"><b>BMI </b></label>
+                  <input class="form-control" id="bmi" name="bmi" placeholder="example 27.9" type="text"
+                    class="validate">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-20">
+                <div class="form-group my-2">
+
+                  <label for="children">Children</label>
+                  <select class="form-control" id="children" name="children" required>
+                    <option disabled selected value> -- Select an Option -- </option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-20">
+                <div class="form-group my-2">
+
+                  <label for="smoker">Smoker</label>
+                  <select class="form-control" id="smoker" name="smoker" required>
+                    <option disabled selected value> -- Select an Option -- </option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-md-20">
+                <div class="form-group my-2">
+
+                  <label for="region">Region</label>
+                  <select class="form-control" id="region" name="region" required>
+                    <option disabled selected value> -- Select an Option -- </option>
+                    <option value="0">Southwest</option>
+                    <option value="1">Southeast</option>
+                    <option value="2">Northwest</option>
+                    <option value="3">Northeast</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            </br>
+            <button id="myButton" type="submit">Predict
+              Result</button>
+
+            <script type="text/javascript">
+              document.getElementById("myButton").onclick = function () {
+                location.href = "{{ url_for('contact') }}";
+              };
+            </script>
+
+
+
+    </center>
+    </fieldset>
+    </form>
+  </div>
+
+
+
+  </html>
+  {% endblock %}

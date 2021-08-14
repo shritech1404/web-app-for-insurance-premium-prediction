@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
+
+
+
+  <title>{% block title %} {% endblock title %} Insurance Premium</title>
+</head>
+
+
+<style>
+  body {
+    background-image: url('static/bg.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .block {
+    display: block;
+    width: 120%;
+    border: none;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  select {
+    background-repeat: no-repeat;
+    background-position: 300px;
+    width: 32em;
+    padding: .5em;
+    margin-top: 2px;
+    font-weight: bold;
+    font-family: Cursive;
+    line-height: 1;
+    border: solid 1px #999;
+    background-color: #A2AB58;
+    font-size: 20px;
+    -webkit-appearance: none;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    outline: none
+  }
+
+  label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+  }
+
+  .checks label {
+    margin-top: 0;
+  }
+
+  label:first-of-type {
+    margin-top: 0;
+  }
+
+  input {
+    background-repeat: no-repeat;
+    background-position: 300px;
+    width: 35em;
+    padding: .5em;
+    margin-top: 2px;
+    font-family: Cursive;
+    line-height: 1;
+    border: solid 1px #999;
+    font-size: 16px;
+    -webkit-appearance: none;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    outline: none
+  }
+
+  input[type="email"],
+  input[type="text"] {
+    background-repeat: no-repeat;
+    background-position: 300px;
+    width: 36.5em;
+    padding: .5em;
+    margin-top: 2px;
+    font-family: Cursive;
+    line-height: 1;
+    border: solid 1px #999;
+    font-size: 16px;
+    -webkit-appearance: none;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    outline: none
+  }
+  }
+
+  input[type="number"] {
+    background-repeat: no-repeat;
+    background-position: 300px;
+    width: 36em;
+    padding: .5em;
+    margin-top: 2px;
+    font-family: Cursive;
+    line-height: 1;
+    border: solid 1px #999;
+    font-size: 16px;
+    -webkit-appearance: none;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    outline: none
+  }
+
+  textarea {
+    min-height: 8em;
+    min-width: 100%;
+    padding: .5em;
+    border: solid 1px #999;
+  }
+  
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 20px;
+  cursor: pointer;
+}
+</style>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="/">IPP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  {% block body %}
+
+  {% endblock body %}
+  <center>
+    <footer class="text-center py-5">
+      <div class="container py-md-3">
+        <!-- logo -->
+        <h3 class="logo2 text-center my-1">
+          <a href="{{ url_for('hello_world') }}">
+            iNeuron Intelligence Pvt Ltd
+          </a>
+        </h3>
+        <!-- //logo -->
+        <!-- address -->
+        <div class="contact-left-footer mt-4">
+
+          <!-- <a href="community.html">Community</a> -->
+          </p>
+        </div>
+        <div class="w3l-copy text-center">
+          <p class="text-da">An Health Intelligence Startup<br> </p>
+        </div>
+        <p class="homelogo">
+        <p>Made with ❤️ by Shrikant</p>
+        <p>&copy; Copyright 2021 Shrikant Shejwal</p>
+
+      </div>
+    </footer>
+  </center>
+  <!-- //footer -->
+
+  <!-- move top icon -->
+  <a href="#hello_world" class="move-top text-center"></a>
+  <!-- //move top icon -->
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
