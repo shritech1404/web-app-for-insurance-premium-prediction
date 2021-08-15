@@ -24,7 +24,7 @@ management.
  - [High Level Document](https://github.com/shritech1404/web-app-for-insurance-premium-prediction/blob/main/High%20Level%20Design.pdf)
  - [Low Level Document](https://github.com/shritech1404/web-app-for-insurance-premium-prediction/blob/main/Low%20Lavel%20Design.docx)
  - [Wireframe Document](https://github.com/shritech1404/web-app-for-insurance-premium-prediction/blob/main/wireframe%20documantation-converted.pdf)
- - [Details Project Details](https://github.com/shritech1404/web-app-for-insurance-premium-prediction/blob/main/Low%20Lavel%20Design.docx)
+ - [Details Project Details](https://github.com/shritech1404/web-app-for-insurance-premium-prediction/blob/main/Insurance%20Premium%20Prediction%20Report-converted.pdf)
  - [Deployed Application](https://premiumml.herokuapp.com/)
 
   
